@@ -1,0 +1,137 @@
+.form-container{
+    width: 600px;
+    height: 500px;
+    background: rgb(239, 239, 239);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    box-shadow: 10px 10px 15px  rgb(119, 119, 120);
+    padding-bottom: 100px
+
+}
+.form-title{
+    width: 100%;
+    padding-left: 25px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+h3{
+    margin: 5px 0 25px;
+    font-weight: 400;
+}
+form{
+    display: none;
+}
+.label-card{
+    height: 40px;
+    width: calc(100% / 3);
+    font-size: 18px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    background: rgb(237, 235, 235);
+    transition: 0.5s;
+    position: relative;
+    transition: 0.5s;
+}
+input:checked + label{
+    color: rgb(99, 3, 168);
+
+}
+input:checked + label::after{
+    background-color: rgb(99, 3, 168);
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    content: "";
+    bottom: 0;
+    left: 0;
+}
+
+input[type="radio"]{
+    display: none;
+}
+.form-form{
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: rgb(237, 235, 235);
+}
+
+#form1:checked ~ #formulario1{
+    display: block;
+}
+#form2:checked ~ #formulario2{
+    display: block;
+}
+#form3:checked ~ #formulario3{
+    display: block;
+}
+.form1, .form2, .form3{
+    padding: 30px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.input-group{
+    position: relative;
+    
+}
+
+.input-form:focus + .label-form{
+    top: -10px;
+    left: 25px;  
+    color:  rgb(24, 9, 27);
+}
+.input-form:focus {
+    outline:none ;
+    border-bottom: 2px solid rgb(24, 9, 27)!important;
+   
+}
+.label-form{
+    color:  rgb(139, 138, 138);;
+    position: absolute;
+    top: -5px;
+    left: 17px; 
+    transition: 0.4s;
+
+}
+.input-form{
+    width: 100%;
+    background: none;
+    height: 30px;
+    border: none;
+    transition: 0.8s;
+    border-bottom:  3px solid rgb(182, 180, 180);
+
+}
+.input-form:not(:placeholder-shown) + label{
+    top: -10px;
+    left: 25px;
+}
+.pair-line{
+    grid-column: 1 / span 2;
+}
+.button{
+    width: 147px;
+    padding: 22px;
+    border-radius: 47px;
+    border: none;
+    background: darkviolet;
+    box-shadow: 10px 10px 6px #aa8b8b;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+.button-container{
+    position: absolute;
+    top: 460px;
+    left: 225px;
+}

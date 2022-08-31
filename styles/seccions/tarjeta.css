@@ -1,0 +1,67 @@
+.tarjeta{
+    transform: scale(0.8);
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgb(119, 119, 120);
+    transform: scale(1.1);
+}
+.card-image{
+    width: 95%;
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center ;
+    border-radius: 8px; 
+    gap: 15px;
+    z-index: 1;
+    padding: 0px, 20px, 30px;
+    margin-bottom: -85%;
+    
+}
+.img-tarj-container{
+    height: 300px;
+    width: 100%;
+    background-image: cover;
+    
+}
+.img-tarj-container img{
+    height: 100%;
+    width: 100%;
+    background-color: lightskyblue;
+    object-fit: contain;
+}
+.card-description{
+        margin-bottom: 55px;
+}
+.item-button{
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: rgb(241, 193, 19);
+    color:rgb(229, 227, 239);
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.item-button:hover{
+    transform: scale(1.2);
+    color: white;
+}
+.card-info{
+    
+    height:500px;
+    width: 100%;
+    background-color: rgb(38, 34, 111);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;    
+    padding-bottom: 40px;
+    color:rgb(229, 227, 239);
+    letter-spacing: 2px;
+}

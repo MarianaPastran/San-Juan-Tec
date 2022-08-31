@@ -1,0 +1,48 @@
+.conteiner-galery{
+   
+    columns: 3;
+    gap: 15px;
+    padding: 25px;
+}
+
+.card-inf{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+
+.heart{
+    width: 24px;
+    height: 24px;
+    clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+    background-color: rgb(204, 204, 204);
+    align-self: center;
+
+}
+.heart:hover{
+    background-color: rgb(197, 10, 10);
+    transition: 1.5s;
+}
+p{
+    font-size: 18px;
+}
+.box{
+    overflow: hidden;
+}
+.img-container{
+    padding: 20px;
+    padding-bottom: 35px;
+    background-color: rgb(243, 243, 242);
+    margin-bottom: 70px;
+    box-shadow:  10px 10px 30px rgb(140, 133, 133);
+    overflow: hidden;
+}
+.img-galery {
+    width: 100%;
+    transition: 2s;
+}
+.img-galery:hover{
+    opacity: 0.4;
+    transform: scale(1.2);
+}
